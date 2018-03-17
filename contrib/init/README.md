@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: tiberiumd.service
+Upstart: tiberiumd.conf
+OpenRC:  tiberiumd.openrc
+         tiberiumd.openrcconf
+CentOS:  tiberiumd.init
 
 have been made available to assist packagers in creating node packages here.
 

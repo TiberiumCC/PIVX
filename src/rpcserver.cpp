@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2017 The PIVX Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -263,11 +263,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop TIBERIUM server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "TIBERIUM server stopping";
 }
 
 
@@ -351,36 +351,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* PIVX features */
-        {"pivx", "masternode", &masternode, true, true, false},
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "mnbudget", &mnbudget, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* TIBERIUM features */
+        {"tiberium", "masternode", &masternode, true, true, false},
+        {"tiberium", "listmasternodes", &listmasternodes, true, true, false},
+        {"tiberium", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"tiberium", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"tiberium", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"tiberium", "masternodedebug", &masternodedebug, true, true, false},
+        {"tiberium", "startmasternode", &startmasternode, true, true, false},
+        {"tiberium", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"tiberium", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"tiberium", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"tiberium", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"tiberium", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"tiberium", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"tiberium", "mnbudget", &mnbudget, true, true, false},
+        {"tiberium", "preparebudget", &preparebudget, true, true, false},
+        {"tiberium", "submitbudget", &submitbudget, true, true, false},
+        {"tiberium", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"tiberium", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"tiberium", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"tiberium", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"tiberium", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"tiberium", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"tiberium", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"tiberium", "checkbudgets", &checkbudgets, true, true, false},
+        {"tiberium", "mnsync", &mnsync, true, true, false},
+        {"tiberium", "spork", &spork, true, true, false},
+        {"tiberium", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"pivx", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"tiberium", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -607,7 +607,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> tiberium-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
