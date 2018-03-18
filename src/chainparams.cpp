@@ -15,6 +15,7 @@
 
 #include <boost/assign/list_of.hpp>
 
+#define NDEBUG
 using namespace std;
 using namespace boost::assign;
 
@@ -182,7 +183,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04d33b2dc6f90e15117204f5ee869c414c8251d757c2185e483f78d5eaf5b7e1c0e39cf202622709332926d9f17889340a65556e7c76009786ffef2abf5672ce92";
         strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1520358882; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1520358882; 
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -243,8 +244,8 @@ public:
         nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1454124731;
-        genesis.nNonce = 2402015;
+        genesis.nTime = 1520358883;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
@@ -308,9 +309,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // TIBERIUM: 1 day
         nTargetSpacing = 1 * 60;        // TIBERIUM: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1454124731;
+        genesis.nTime = 1520358884;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 12345;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 7126;
