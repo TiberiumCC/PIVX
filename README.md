@@ -1,15 +1,6 @@
 TIBERIUM Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/TiberiumCC/Tiberium.svg?branch=master)](https://travis-ci.org/TiberiumCC/Tiberium) [![GitHub version](https://badge.fury.io/gh/TIBERIUM-Project%2FTIBERIUM.svg)](https://badge.fury.io/gh/TIBERIUM-Project%2FTIBERIUM)
-
-TIBERIUM is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of TIBERIUM is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions using the [_Zerocoin Protocol_](http://www.tiberium.org/ztbr).
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
-- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
-
-More information at [tiberium.org](http://www.tiberium.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
-
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
@@ -18,16 +9,6 @@ More information at [tiberium.org](http://www.tiberium.org) Visit our ANN thread
 <tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 TBR</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
 <tr><td>Premine</td><td>60,000 TBR*</td></tr>
-</table>
-
-*60,000 TBR Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/TIBERIUM/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
-
-### Reward Distribution
-
-<table>
-<th colspan=4>Genesis Block</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 TBR</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/TIBERIUM/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
 </table>
 
 ### PoW Rewards Breakdown
