@@ -176,7 +176,7 @@ UniValue addnode(const UniValue& params, bool fHelp)
             "1. \"node\"     (string, required) The node (see getpeerinfo for nodes)\n"
             "2. \"command\"  (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n"
             "\nExamples:\n" +
-            HelpExampleCli("addnode", "\"192.168.0.6:51472\" \"onetry\"") + HelpExampleRpc("addnode", "\"192.168.0.6:51472\", \"onetry\""));
+            HelpExampleCli("addnode", "\"192.168.0.6:7125\" \"onetry\"") + HelpExampleRpc("addnode", "\"192.168.0.6:7125\", \"onetry\""));
 
     string strNode = params[0].get_str();
 
